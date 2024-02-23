@@ -5,8 +5,15 @@ import com.distribuida.authors.repo.AuthorRepository;
 import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;
 import jakarta.ws.rs.*;
+import jakarta.ws.rs.core.Application;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
+import org.eclipse.microprofile.openapi.annotations.OpenAPIDefinition;
+import org.eclipse.microprofile.openapi.annotations.Operation;
+import org.eclipse.microprofile.openapi.annotations.info.Contact;
+import org.eclipse.microprofile.openapi.annotations.info.Info;
+import org.eclipse.microprofile.openapi.annotations.info.License;
+import org.eclipse.microprofile.openapi.annotations.tags.Tag;
 
 import java.util.List;
 
@@ -21,12 +28,19 @@ public class AuthorRest {
 
     //books GET
     @GET
+    @Operation(
+            summary = "Busca todos los autores",
+            description = "no recibe parametros")
     public List<Author> findAll() {
         return rep.findAll().list();
     }
 
     @GET
     @Path("/{id}")
+    @Operation(
+            summary = "Busca autores por id",
+            description = "recibe como parametro Integer"
+    )
     public Response findById(@PathParam("id") Integer id) {
         var book = rep.findByIdOptional(id);
         if (book.isEmpty()) {
@@ -37,6 +51,10 @@ public class AuthorRest {
     }
 
     @POST
+    @Operation(
+            summary = "Crea un nuevo autor",
+            description = "recibe como pametro un objeto libro"
+    )
     public Response create(Author p) {
         rep.persist(p);
 
@@ -45,6 +63,10 @@ public class AuthorRest {
 
     @PUT
     @Path("/{id}")
+    @Operation(
+            summary = "Actualiza un autor por ID",
+            description = "recibe como parametro Integer para Id y objeto author"
+    )
     public Response update(@PathParam("id") Integer id, Author authorObj) {
         Author author = rep.findById(id);
         author.setFirstName(authorObj.getFirstName());
@@ -58,6 +80,10 @@ public class AuthorRest {
     //books/{id} DELETE
     @DELETE
     @Path("/{id}")
+    @Operation(
+            summary = "Elimina author por ID",
+            description = "recibe Integer para ID"
+    )
     public Response delete(@PathParam("id") Integer id) {
         rep.deleteById(id);
 

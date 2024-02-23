@@ -27,6 +27,7 @@ dependencies {
     implementation("io.quarkus:quarkus-hibernate-orm-panache") //JPA: Hibernate
     implementation("io.quarkus:quarkus-jdbc-postgresql") //Driver JDBC: PostgreSQL
     implementation("org.eclipse.microprofile.health:microprofile-health-api:4.0.1") //microprofile health
+    implementation("io.quarkus:quarkus-smallrye-openapi")   //OpenApi
 }
 
 tasks.test {

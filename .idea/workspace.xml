@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a997bdfa-72fb-4ae1-8816-f30e1ebba779" name="Changes" comment="docker compose">
-      <change afterPath="$PROJECT_DIR$/app-authors-deployment.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app-books-deployment.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app-authors/src/main/java/com/distribuida/authors/AuthorsApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app-authors/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app-authors/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app-authors/src/main/java/com/distribuida/authors/repo/AuthorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/app-authors/src/main/java/com/distribuida/authors/repo/AuthorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app-authors/src/main/java/com/distribuida/authors/rest/AuthorRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app-authors/src/main/java/com/distribuida/authors/rest/AuthorRest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app-authors/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app-authors/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app-books/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app-books/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app-books/src/main/java/com/distribuida/app/books/BooksApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app-books/src/main/java/com/distribuida/app/books/BooksApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app-books/src/main/java/com/distribuida/app/books/rest/BookRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app-books/src/main/java/com/distribuida/app/books/rest/BookRest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,18 +45,25 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "contexts": [
+  <component name="KubernetesApiProvider">{
+  &quot;contexts&quot;: [
     {
-      "name": "minikube",
-      "originalNamespace": "default"
+      &quot;name&quot;: &quot;minikube&quot;,
+      &quot;originalNamespace&quot;: &quot;default&quot;
     }
   ],
-  "isMigrated": true
-}]]></component>
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="KubernetesSettings">
     <option name="contextName" value="minikube" />
   </component>
@@ -66,6 +80,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/fing.labcom/Desktop/distribuida-20232024",
@@ -76,7 +91,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.distribuida-20232024:app-books [quarkusBuild]">
+  <component name="RunManager" selected="Gradle.distribuida-20232024:app-books [quarkusDev]">
     <configuration name="distribuida-20232024:app-authors [quarkusBuild]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -99,6 +114,28 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="distribuida-20232024:app-authors [quarkusDev]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/app-authors" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="quarkusDev" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="distribuida-20232024:app-books [quarkusBuild]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -111,6 +148,28 @@
         <option name="taskNames">
           <list>
             <option value="quarkusBuild" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="distribuida-20232024:app-books [quarkusDev]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/app-books" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="quarkusDev" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -273,6 +332,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.distribuida-20232024:app-books [quarkusDev]" />
+        <item itemvalue="Gradle.distribuida-20232024:app-authors [quarkusDev]" />
         <item itemvalue="Gradle.distribuida-20232024:app-books [quarkusBuild]" />
         <item itemvalue="Gradle.distribuida-20232024:app-authors [quarkusBuild]" />
       </list>
@@ -290,6 +351,9 @@
       <workItem from="1706733479188" duration="1925000" />
       <workItem from="1707313115834" duration="3661000" />
       <workItem from="1707497075018" duration="3381000" />
+      <workItem from="1707920106353" duration="3567000" />
+      <workItem from="1708358141480" duration="107000" />
+      <workItem from="1708689038615" duration="4103000" />
     </task>
     <task id="LOCAL-00001" summary="docker compose">
       <option name="closed" value="true" />

@@ -31,6 +31,7 @@ dependencies {
     //--rest client
     implementation("io.quarkus:quarkus-rest-client-reactive")
     implementation("io.quarkus:quarkus-rest-client-reactive-jackson")
+    implementation("io.quarkus:quarkus-smallrye-openapi")   //OpenApi
 }
 
 tasks.test {
